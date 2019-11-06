@@ -1,0 +1,5 @@
+[default]
+protoPath = ["src/main/proto","~/github/protocolbuffers/protobuf/src"]
+protoFile = ["helloworld.proto"]
+package = "io.grpc.examples.helloworld"
+service = "Greeter"
