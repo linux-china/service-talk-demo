@@ -13,9 +13,9 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <servicetalk.version>0.40.0</servicetalk.version>
-        <protobuf-java.version>3.17.0</protobuf-java.version>
-        <grpc.version>1.38.0</grpc.version>
+        <servicetalk.version>0.41.4</servicetalk.version>
+        <protobuf-java.version>3.17.3</protobuf-java.version>
+        <grpc.version>1.40.1</grpc.version>
         <junit5.version>5.7.2</junit5.version>
     </properties>
 
@@ -54,6 +54,10 @@
         </dependency>
         <dependency>
             <groupId>io.grpc</groupId>
+            <artifactId>grpc-services</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.grpc</groupId>
             <artifactId>grpc-grpclb</artifactId>
         </dependency>
         <dependency>
@@ -76,7 +80,7 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.2.3</version>
+            <version>1.2.5</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -86,7 +90,7 @@
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
-            <version>3.19.0</version>
+            <version>3.20.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
