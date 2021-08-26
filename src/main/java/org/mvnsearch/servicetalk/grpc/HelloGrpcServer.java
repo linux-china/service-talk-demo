@@ -1,6 +1,5 @@
 package org.mvnsearch.servicetalk.grpc;
 
-import io.grpc.examples.helloworld.Greeter.ServiceFactory;
 import io.servicetalk.grpc.netty.GrpcServers;
 
 /**
@@ -11,9 +10,8 @@ import io.servicetalk.grpc.netty.GrpcServers;
 public class HelloGrpcServer {
 
     public static void main(String[] args) throws Exception {
-        ServiceFactory[] serviceFactories = new ServiceFactory[]{new ServiceFactory(new MyGreeterService())};
-        GrpcServers.forPort(50051)
-                .listenAndAwait(serviceFactories)
+        GrpcServers.forPort(50052)
+                .listenAndAwait(new MyGreeterService())
                 .awaitShutdown();
     }
 
